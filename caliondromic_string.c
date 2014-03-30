@@ -6,8 +6,7 @@ Some examples of caliondrome are cannac,011101,lirril,etc., */
 #include<stdlib.h>
 #include<string.h>
 int caliondrome (char a[100]);
-void
-main ()
+void main ()
 {
   char a[100];
   printf ("\n Enter the string to check for caliondrome : ");
@@ -19,14 +18,13 @@ main ()
     printf ("\n %s: is a caliondrome !! \n", a);
 }
 
-int
-caliondrome (char a[100])
+int caliondrome (char a[100])
 {
   int index = 1, i;
+  int len = strlen(a)
   for (i = 0; a[i] != '\0';)
     {
-      if ((a[i] == a[i + 5]) && (a[i + 1] == a[i + 4])
-	  && (a[i + 2] == a[i + 3]))
+      if ((a[i] == a[len-i-1]) && (a[i + 1] == a[len-i-2]) && (a[i + 2] == a[len-i-3]))
 	i = i + 6;
       else
 	{
