@@ -8,8 +8,7 @@ The strcat() function concatenates string2, string1 and returns string1. */
 #include<stdlib.h>
 #include<string.h>
 char *strct (char *c1, char *c2);
-char *
-strct (char *c1, char *c2)
+char *strct (char *c1, char *c2)
 {
 //strlen function returns length of argument string
   int i = strlen (c1);
@@ -35,7 +34,7 @@ main ()
   printf ("\n Before concatenation:"
 	  "\n string1 = %s \n string2 = %s", string1, string2);
 // addresses of string1, string2 are passed to strct()
-  finalstr = strcat (string1, string2);
+  finalstr = strct (string1, string2);
   printf ("\n After concatenation:");
 //prints the contents of string whose address is in finalstr
   printf ("\n finalstr = %s", finalstr);
