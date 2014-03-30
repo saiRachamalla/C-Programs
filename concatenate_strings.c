@@ -1,7 +1,7 @@
 //nothing
 //deletethis
 /* Program to concatenate two strings without using strcat() function.
-strct(string1, string2) is a C standard function declared in the header file string.h
+strcat(string1, string2) is a C standard function declared in the header file string.h
 The strct() function concatenates string2, string1 and returns string1. */
 
 #include<stdio.h>
