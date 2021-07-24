@@ -18,7 +18,7 @@ main ()
 //i'th element of series is equal to the sum of i-1'th element and i-2'th element.
       fib[i] = fib[i - 1] + fib[i - 2];
     }
-  printf ("\n The fibonacci series is as follows : ");
+  printf ("\n The fibonacci series  as follows : ");
 //print all numbers in the series
   for (i = 0; i < 10; i++)
     {
